@@ -52,8 +52,8 @@ function LoginForm() {
       await login(usuario, contrasenna);
       toast.success('Inicio de sesión exitoso');
 
-      // Redirigir a la ruta original o a dashboard
-      const redirect = searchParams.get('redirect') || '/dashboard';
+      // Redirigir a la ruta original o al dashboard principal
+      const redirect = searchParams.get('redirect') || '/';
       router.push(redirect);
     } catch (error) {
       // Manejo de errores mejorado para UX y seguridad
